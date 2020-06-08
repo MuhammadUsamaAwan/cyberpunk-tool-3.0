@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -20,14 +21,14 @@ const Login = () => {
         <input type='submit' value='Login' />
       </form>
       <div className='flex-center'>
-        <a href='#!' className='form__link'>
+        <Link to='/signup' className='form__link'>
           Don't have an account?
-        </a>
+        </Link>
       </div>
       <div className='flex-center'>
-        <a href='#!' className='form__link'>
+        <Link to='/forgotpassword' className='form__link'>
           Forgot Password?
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -14,6 +14,8 @@ import ForgotPassword from './components/auth/ForgotPassword';
 import ChangePassword from './components/auth/ChangePassword';
 import Profile from './components/pages/profile/Profile';
 import Profiles from './components/pages/profile/Profiles';
+import Comments from './components/pages/builds/Comments';
+import Planner from './components/pages/planner/Planner';
 
 function App() {
   return (
@@ -27,6 +29,9 @@ function App() {
             <Contact />
           </Route>
           <Route exact path='/builds' component={Builds} />
+          <Route exact path='/build'>
+            <Comments />
+          </Route>
           <Route exact path='/login' component={Login} />
           <Route exact path='/signup' component={Signup} />
           <Route exact path='/forgotpassword' component={ForgotPassword} />
@@ -34,6 +39,7 @@ function App() {
           <Route exact path='/changepassword' component={ChangePassword} />
           <Route exact path='/profile' component={Profile} />
           <Route exact path='/profiles' component={Profiles} />
+          <Route exact path='/planner' component={Planner} />
         </Switch>
       </div>
       <Footer />

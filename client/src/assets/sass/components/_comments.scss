@@ -1,0 +1,74 @@
+.comments {
+  &__post {
+    display: flex;
+    &__pic {
+      width: 10rem;
+      height: 10rem;
+    }
+    &__name {
+      margin-top: -1.2rem;
+    }
+    &__form {
+      flex: 1;
+      height: 10rem;
+      & > * {
+        display: block;
+        color: #cdcdcd;
+        border: 1px solid #cdcdcd;
+        background-color: transparent;
+      }
+      &__input {
+        width: 99%;
+        height: 10rem;
+        margin-left: auto;
+        padding: 1rem;
+        &::placeholder {
+          color: currentColor;
+          text-transform: uppercase;
+        }
+        &:active {
+          outline: none;
+        }
+      }
+      &__submit {
+        float: right;
+        margin-top: 0.3rem;
+        cursor: pointer;
+        padding: 1rem;
+      }
+    }
+    &--reply {
+      margin-left: 11rem;
+    }
+  }
+}
+
+.comment {
+  display: flex;
+  &__pic {
+    width: 10rem;
+    height: 10rem;
+  }
+  &__name,
+  &__date {
+    margin-top: -1.2rem;
+  }
+  &__content {
+    flex: 1;
+  }
+  &__text {
+    width: 99%;
+    margin-left: auto;
+    border: 1px solid #cdcdcd;
+    height: 10rem;
+    overflow: auto;
+    padding: 0 1rem;
+  }
+  &__reply {
+    float: right;
+    cursor: pointer;
+  }
+  &--reply {
+    margin-left: 11rem;
+  }
+}

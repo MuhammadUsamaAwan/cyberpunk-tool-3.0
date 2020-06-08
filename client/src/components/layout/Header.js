@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -15,12 +16,12 @@ const Header = () => {
             browse & favorite other people's submitted builds
           </span>
         </h1>
-        <a href='#!' className='btn btn--primary btn--start'>
+        <Link to='/planner' className='btn btn--primary btn--start'>
           Build planner_
-        </a>
-        <a href='#!' className='btn btn--secondary btn--end ml-small'>
+        </Link>
+        <Link to='/builds' className='btn btn--secondary btn--end ml-small'>
           Browse builds_
-        </a>
+        </Link>
       </div>
     </header>
   );

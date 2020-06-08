@@ -1,5 +1,6 @@
 import React from 'react';
 import { ReactComponent as Logo } from '../../assets/images/logo.svg';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -9,18 +10,29 @@ const Navbar = () => {
       <label className='navigation__icon' htmlFor='nav-toggle' />
       <ul className='navigation__link'>
         <li>
-          <a href='#!' className='navigation__active'>
+          <NavLink exact to='/' activeClassName='navigation__active'>
             Home
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href='#!'>Planner</a>
+          <NavLink exact to='/planner' activeClassName='navigation__active'>
+            Planner
+          </NavLink>
         </li>
         <li>
-          <a href='#!'>Builds</a>
+          <NavLink exact to='/builds' activeClassName='navigation__active'>
+            Builds
+          </NavLink>
         </li>
         <li>
-          <a href='#!'>Login</a>
+          <NavLink exact to='/profile' activeClassName='navigation__active'>
+            Profile
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to='/login' activeClassName='navigation__active'>
+            Login
+          </NavLink>
         </li>
       </ul>
     </nav>

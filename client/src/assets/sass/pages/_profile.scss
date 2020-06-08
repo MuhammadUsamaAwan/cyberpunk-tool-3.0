@@ -38,7 +38,9 @@
     justify-content: center;
   }
   &__info {
-    border: 1px solid #cdcdcdcd;
+    border: 1px solid #cdcdcd;
+    margin-right: -1px;
+    margin-top: -1px;
     text-transform: uppercase;
     & > div {
       font-weight: 100;
@@ -92,8 +94,9 @@
     grid-area: 4 / 3 / 5 / 7;
   }
   &__edit {
-    border: 1px solid #cdcdcdcd;
+    border: 1px solid #cdcdcd;
     text-transform: uppercase;
+    margin-right: -1px;
     padding: 1rem;
     cursor: pointer;
     flex: 1;
