@@ -1,0 +1,60 @@
+body {
+  font-family: Blender Pro, sans-serif;
+  font-size: 2rem;
+  line-height: 1.7;
+  background-color: $body-bg;
+  color: $body-col;
+}
+
+.heading-primary {
+  &--main,
+  &--sub {
+    display: block;
+    text-transform: uppercase;
+  }
+  &--main {
+    color: $primary-heading-col;
+    font-size: 5rem;
+    line-height: normal;
+    @include respond(phone) {
+      font-size: 4.5rem;
+    }
+  }
+  &--sub {
+    font-size: 2.5rem;
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.heading-secondary {
+  position: relative;
+  h2 {
+    display: block;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: $primary-secondary-col;
+  }
+  &-mb {
+    position: absolute;
+    left: 0;
+    top: 5.5rem;
+    &--contact {
+      width: 15rem;
+    }
+    &--features {
+      width: 17rem;
+    }
+    &--builds {
+      width: 12rem;
+    }
+  }
+}
+
+.heading-section {
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: $primary-secondary-col;
+  text-align: center;
+}

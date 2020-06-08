@@ -1,0 +1,41 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    @include respond(phone) {
+      padding: 1rem 2rem;
+    }
+  }
+
+  &--primary {
+    background-color: $button-primary-bg;
+    color: $button-primary-col;
+    &:hover {
+      background-color: darken($button-primary-bg, 15);
+    }
+  }
+  &--secondary {
+    background-color: $button-secondary-bg;
+    color: $button-secondary-col;
+    &:hover {
+      background-color: darken($button-secondary-bg, 15);
+    }
+  }
+  &--start {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 25%, 8% 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 25%, 8% 0);
+  }
+  &--end {
+    -webkit-clip-path: polygon(100% 0, 100% 75%, 92% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 75%, 92% 100%, 0 100%, 0 0);
+  }
+  // &--single {
+  //   -webkit-clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  //   clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  // }
+}

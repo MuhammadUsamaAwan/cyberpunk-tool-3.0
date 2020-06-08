@@ -1,0 +1,64 @@
+/////////////////////////////////////////
+//////FEATURES
+.section-features {
+  padding: 15rem 3rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+  grid-template-areas: 'craft save browse' 'craft share favorite';
+  @include respond(phone) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 'craft craft' 'save share' 'browse favorite';
+  }
+  &__item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $features-bg;
+    color: $features-col;
+    padding: 1rem;
+    &:hover {
+      background-color: $features-bg-hover;
+    }
+    &__icon {
+      font-size: 4rem;
+    }
+    &__text {
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    &--craft {
+      grid-area: craft;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 7%, 7% 0);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 7%, 7% 0);
+    }
+    &--save {
+      grid-area: save;
+    }
+
+    &--share {
+      grid-area: share;
+    }
+
+    &--browse {
+      grid-area: browse;
+    }
+
+    &--favorite {
+      -webkit-clip-path: polygon(100% 0, 100% 87%, 93% 100%, 0 100%, 0 0);
+      clip-path: polygon(100% 0, 100% 87%, 93% 100%, 0 100%, 0 0);
+      grid-area: favorite;
+    }
+  }
+}
+
+.section-contact {
+  padding: 0;
+}

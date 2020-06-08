@@ -1,0 +1,26 @@
+.header {
+  @include flex-center;
+  height: 100vh;
+  padding: 0 3rem;
+  background-image: linear-gradient(
+      to right bottom,
+      $header-overlay-col-light,
+      $header-overlay-col-dark
+    ),
+    url('../../images/header-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  &__text-box {
+    width: 100%;
+    text-align: center;
+  }
+  &__img {
+    width: 50%;
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+}
