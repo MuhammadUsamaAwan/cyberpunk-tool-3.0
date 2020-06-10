@@ -1,5 +1,5 @@
 ////////////////////////////////////////////
-/////////RESPONSIVER MANAGER
+/////////RESPONSIVE MANAGER
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {

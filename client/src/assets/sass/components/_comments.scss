@@ -16,6 +16,13 @@
         color: #cdcdcd;
         border: 1px solid #cdcdcd;
         background-color: transparent;
+        font-family: inherit;
+        transition: all 0.3s ease-in-out;
+        font-size: inherit;
+        &:hover {
+          background-color: #cdcdcd;
+          color: black;
+        }
       }
       &__input {
         width: 99%;
@@ -25,9 +32,6 @@
         &::placeholder {
           color: currentColor;
           text-transform: uppercase;
-        }
-        &:active {
-          outline: none;
         }
       }
       &__submit {
@@ -67,6 +71,10 @@
   &__reply {
     float: right;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: #e90848;
+    }
   }
   &--reply {
     margin-left: 11rem;

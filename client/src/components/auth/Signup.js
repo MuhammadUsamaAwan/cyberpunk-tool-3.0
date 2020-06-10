@@ -30,7 +30,7 @@ const Signup = () => {
           placeholder='Confirm Password'
           required
         />
-        <input type='submit' value='Signup' />
+        <input type='submit' value='Sign Up' />
       </form>
       <div className='flex-center'>
         <Link to='/login' className='form__link'>

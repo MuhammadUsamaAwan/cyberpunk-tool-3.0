@@ -4,11 +4,9 @@ import { ReactComponent as Mb } from '../../../assets/images/mb.svg';
 const Contact = () => {
   return (
     <section className='section-contact'>
-      <div className='ml-small'>
-        <div className='heading-secondary'>
-          <h2>Contact</h2>
-          <Mb className='heading-secondary-mb heading-secondary-mb--contact' />
-        </div>
+      <div className='heading-secondary ml-small'>
+        <h2>Contact</h2>
+        <Mb className='heading-secondary-mb heading-secondary-mb--contact' />
       </div>
 
       <form className='form-contact'>

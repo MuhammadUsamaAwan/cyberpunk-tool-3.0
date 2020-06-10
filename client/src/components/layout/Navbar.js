@@ -1,11 +1,11 @@
 import React from 'react';
 import { ReactComponent as Logo } from '../../assets/images/logo.svg';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav className='navigation'>
-      <Logo className='navigation__logo' />
+      <Link to='/' className='navigation__logo' component={Logo}></Link>
       <input type='checkbox' className='navigation__checkbox' id='nav-toggle' />
       <label className='navigation__icon' htmlFor='nav-toggle' />
       <ul className='navigation__link'>

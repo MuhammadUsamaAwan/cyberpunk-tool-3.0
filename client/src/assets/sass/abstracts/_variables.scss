@@ -1,40 +1,48 @@
-// :root {
-//   --neon-color: #00f0ff;
-//   --blue-color: #02d7f2;
-//   --red-color: #e90848;
-//   --yellow-color: #fcee0a;
-//   --black-color: #000;
-//   --light-color: #cdcdcd;
-//   --white-color: #fff;
-// }
+//BDOY
 $body-bg: lighten(#000, 3);
 $body-col: #cdcdcd;
-$primary-heading-col: #fcee0a;
-$primary-secondary-col: #fcee0a;
-$section-heading-col: #e90848;
-$header-overlay-col-light: rgba(lighten(#000, 20), 0.8);
-$header-overlay-col-dark: rgba(0, 0, 0, 0.8);
+//NAVBAR
 $navbar-bg: #fcee0a;
 $navbar-col: #000;
 $navbar-active: #e90848;
 $navbar-mob-bg: darken($navbar-bg, 5);
-$features-bg: darken(#fff, 40);
-$features-bg-hover: darken(#fff, 50);
-$features-col: #000;
+//HEADER
+$header-overlay-col-light: rgba(lighten(#000, 20), 0.8);
+$header-overlay-col-dark: rgba(0, 0, 0, 0.8);
+//MAIN HEADING
+$primary-heading-col: #fcee0a;
+$primary-secondary-col: #fcee0a;
+//BUTTONS
 $button-primary-col: #fff;
 $button-primary-bg: #e90848;
 $button-secondary-col: #000;
 $button-secondary-bg: #cdcdcd;
+//FEATURES
+$features-bg: darken(#fff, 40);
+$features-bg-hover: darken(#fff, 50);
+$features-col: #000;
+//CONTACT FORM
+$form-contact-bg: #fcee0a;
+$form-contact-border: #000;
+$form-contact-placeholder: lighten(#000, 50);
+$form-submit-bg: #000;
+$form-submit-col: #fcee0a;
+//FOOTER
 $footer-bg: #000;
 $footer-col: #cdcdcd;
 $footer-active: #e90848;
-$form-group-bg: #fcee0a;
-$form-group-border: #000;
-$form-group-placeholder: lighten(#000, 50);
-$form-submit-bg: #000;
-$form-submit-col: #fcee0a;
+//SCI-FI FORM
+$form-sci-fi-bg: rgba(#00f0ff, 0.2);
+$form-sci-fi-col: #00f0ff;
+$form-sci-fi-col-hover: #000;
+$form-sci-fi-select-bg: #000;
+//TABLE
 $table-border: #00f0ff;
 $table-heading-col: #00f0ff;
 $table-heading-bg: rgba(#00f0ff, 0.2);
+//LINK
 $link-col: #00f0ff;
 $link-hover-col: #e90848;
+//PROFILE
+$profile-col: #cdcdcd;
+$profiel-col-hover: #e90848;

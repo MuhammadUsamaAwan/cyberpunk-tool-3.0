@@ -7,7 +7,9 @@ const Footer = () => {
     <footer className='footer'>
       <div className='footer__content'>
         <div className='footer__logo-box'>
-          <Logo className='footer__logo' />
+          <Link to='/'>
+            <Logo className='footer__logo' />
+          </Link>
           <p>CyberpunkTool is a site dedicated to provide tools,</p>
           <p> calculators and build planner for Cyberpunk 2077.</p>
         </div>

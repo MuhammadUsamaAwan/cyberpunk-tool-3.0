@@ -42,22 +42,22 @@
           display: inline-block;
           text-decoration: none;
           padding: 1rem 2rem;
-          margin: 0 2px;
+          margin: 0 0.2rem;
           color: inherit;
           position: relative;
-          border-bottom: solid 3px transparent;
+          border-bottom: solid 0.3rem transparent;
         }
         &::after {
           content: '';
           display: inline-block;
           height: 100%;
           width: 100%;
-          border-bottom: solid 3px $navbar-active;
+          border-bottom: solid 0.3rem $navbar-active;
           transform: scaleX(0);
           transition: transform 0.3s ease-in-out;
           position: absolute;
           left: 0;
-          top: 0.4rem;
+          top: 0.3rem;
           @include respond(phone) {
             display: none;
           }
@@ -67,9 +67,9 @@
         transform: scaleX(1);
       }
       .navigation__active {
-        border-bottom: solid 3px $navbar-active !important;
+        border-bottom: solid 0.3rem $navbar-active !important;
         @include respond(phone) {
-          border-bottom: solid 3px transparent !important;
+          border-bottom: solid 0.3rem transparent !important;
           color: $navbar-active !important;
         }
       }

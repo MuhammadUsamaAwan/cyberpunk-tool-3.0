@@ -29,9 +29,9 @@
   }
   &__input {
     border: none;
-    border-bottom: 2px solid $form-group-border;
+    border-bottom: 2px solid $form-contact-border;
     padding: 1rem 0.5rem;
-    background-color: $form-group-bg;
+    background-color: $form-contact-bg;
     font-family: inherit;
     font-size: 3rem;
     width: 50rem;
@@ -40,7 +40,7 @@
     }
     outline: none;
     &::placeholder {
-      color: $form-group-placeholder;
+      color: $form-contact-placeholder;
       font-weight: 100;
     }
   }
@@ -59,7 +59,7 @@
     cursor: pointer;
     border: none;
     @include respond(phone) {
-      padding: 1rem 2rem;
+      padding: 1.25rem 2.5rem;
     }
     background-color: $form-submit-bg;
     color: $form-submit-col;
@@ -87,18 +87,18 @@
     flex: 1;
     padding: 1rem;
     margin: 1rem;
-    background-color: rgba(#00f0ff, 0.2);
-    color: #00f0ff;
+    background-color: $form-sci-fi-bg;
+    color: $form-sci-fi-col;
     font-weight: bold;
-    border: 1px solid #00f0ff;
+    border: 1px solid $form-sci-fi-col;
     transition: all 0.2s ease-in-out;
     &:focus,
     &:hover {
-      -webkit-box-shadow: 0 0 20px 0 rgba(0, 240, 255, 1);
-      -moz-box-shadow: 0 0 20px 0 rgba(0, 240, 255, 1);
-      box-shadow: 0 0 20px 0 rgba(0, 240, 255, 1);
-      background-color: rgba(0, 220, 220, 1);
-      color: black;
+      -webkit-box-shadow: 0 0 20px 0 $form-sci-fi-col;
+      -moz-box-shadow: 0 0 20px 0 $form-sci-fi-col;
+      box-shadow: 0 0 20px 0 $form-sci-fi-col;
+      background-color: $form-sci-fi-col;
+      color: $form-sci-fi-col-hover;
       outline: none;
     }
   }
@@ -116,6 +116,12 @@
     &::placeholder {
       color: currentColor;
       font-weight: 100;
+    }
+  }
+  select {
+    option {
+      background-color: $form-sci-fi-select-bg;
+      color: $form-sci-fi-col;
     }
   }
 }

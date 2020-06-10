@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header className='header'>
-      <div className='header__text-box'>
+      <div className='text-center'>
         <h1 className='heading-primary'>
           <span className='heading-primary--main'>
             Build planner for cyberpunk 2077
@@ -12,7 +12,7 @@ const Header = () => {
           <span className='heading-primary--sub'>
             Craft, optimize, save & share your builds
           </span>
-          <span className='heading-primary--sub ml-small'>
+          <span className='heading-primary--sub mb-small'>
             browse & favorite other people's submitted builds
           </span>
         </h1>

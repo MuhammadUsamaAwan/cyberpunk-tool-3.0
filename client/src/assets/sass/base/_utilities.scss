@@ -2,6 +2,10 @@
   margin-left: 2rem;
 }
 
+.mb-xs {
+  margin-bottom: 1rem;
+}
+
 .mb-small {
   margin-bottom: 2rem;
 }
@@ -12,4 +16,8 @@
 
 .flex-center {
   @include flex-center;
+}
+
+.text-center {
+  text-align: center;
 }
